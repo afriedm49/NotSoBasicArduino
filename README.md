@@ -33,7 +33,7 @@ This is used to fade an led on and off. The Led will go from on to off slowly in
 [LED Fade on Arduino Create](https://create.arduino.cc/editor/helmstk1/9e044cca-43d7-4d93-885f-e6dec5b4f769/preview)
 
 ### Images
-[ <img src = "https://www.makerspaces.com/wp-content/uploads/2017/05/2-Blink-an-LED_LARGE.jpg" width = "300"> ](https://www.makerspaces.com/wp-content/uploads/2017/05/2-Blink-an-LED_LARGE.jpg)
+<img src = "https://www.makerspaces.com/wp-content/uploads/2017/05/2-Blink-an-LED_LARGE.jpg" width = "300"> 
 ### Reflection
 This helped me remember how to write basic code. In Engineering 1 last year, we made this exact code, but I didn't remember how to do it until now.
 
