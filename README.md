@@ -5,9 +5,10 @@
 ## Table of Contents
 * [Table of Contents](#TableOfContents)
 * [LED_Fade](#LED_Fade)
+* [ArduinoReview](#ArduinoReview)
 * [HelloFunctions](#HelloFunctions)
 * [NewPing](#NewPing) 
-* [ArduinoReview](#ArduinoReview)
+
 ---
 
 ## LED_Fade
