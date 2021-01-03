@@ -101,23 +101,52 @@ I also learned that a button is really just connecting or disconnecting a circui
 ## HelloFunctions
 
 ### Description & Code
-Description goes here
-
-Here's how you make code look like code:
 
 ```C++
-Code goes here
+#include <Servo.h>
+int trig = 10;
+int echo = 11;
+Servo servo1;
+int duration;
+int distance;
+
+void setup() {
+    servo1.attach(7);
+    pinMode(trig, OUTPUT);
+    pinMode(echo, INPUT);
+    Serial.begin(9600);
+}
+
+void loop() {
+  digitalWrite(trig, LOW);
+  delayMicroseconds(2);
+
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
+  
+  duration = pulseIn(echo, HIGH);
+// Calculates the distance
+distance= duration*0.034/2;
+Serial.println("Distance: ");
+Serial.println(distance);
+
+servo1.write(distance * 2);
+}
+
 ```
-Talk about how the code works, here....
+This code makes an ultrasonic sensor pick up the distance from the nearest flat surface. It then uses that number to turn a servo at a certain speed or distance. My code spins the servo one direction if the distance is less than 45 centimeters, and the other direction if is greater than 45.
 
 ### Evidence
-link goes here
+[Hello Functions on Arduino Create](https://create.arduino.cc/editor/afriedm49/4695b514-3043-47ef-9347-c995900f6914)
 
 ### Images
-draw it yourself, take a picture, make a fritzing, whatever you want to EFFECTIVELY communicate how its put together.
+https://github.com/afriedm49/NotSoBasicArduino/blob/main/IMG_7545.MOV
+
+(Video would not work in read me)
 
 ### Reflection
-
+ This assignment allowed me to relearn the use of the servo and the ultrasonic sensor. I used a trig and echo variable to accurately display the distance from the sensor.
 ## NewPing
 
 ### Description & Code
